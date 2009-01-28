@@ -13,7 +13,14 @@ The Random.org Gem is a module that currently contains only one class: @RandomOr
 
 h2. Usage
 
+Usage is pretty straightforward -- the only method is @new(min, max, base)@, where @base@ is either 2, 8, 10, or 16. The default setting is to generate a random base 10 (decimal) integer. Right now, if you choose to generate a hexidecimal integer, it will give you a string. Mostly because I'm lazy.
 
+<pre>
+	require 'random_org'
+	
+	int = RandomOrg::Integer.new(0, 100) # base defaults to 10
+	puts int.value # That's your randomly generated integer.
+</pre>
 
 h2. Dependencies
 

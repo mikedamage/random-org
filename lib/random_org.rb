@@ -14,8 +14,14 @@ module RandomOrg
 			@max = max.to_s
 			@base = base.to_s
 			@@url.query = "num=1&min=#{@min}&max=#{@max}&col=1&base=#{@base}&format=plain&rnd=new"
+			
 			begin
-				@value = Net::HTTP.get(@@url).chomp.to_i
+				res = Net::HTTP.get(@@url).chomp
+				if @base.to_i == 16
+					@value = res
+				else
+					@value = res.to_i
+				end
 			rescue Net::HTTPFatalError => e
 				puts "Error: " + e
 			end
