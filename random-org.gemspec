@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Mike Green"]
   s.date = %q{2009-01-28}
-  s.description = %q{TODO}
+  s.description = %q{Gets random integers from Random.org's random integer generator via HTTP.}
   s.email = %q{mike.is.green@gmail.com}
   s.files = ["README.textile", "VERSION.yml", "lib/random_org.rb", "test/random_org_test.rb", "test/test_helper.rb"]
   s.has_rdoc = true
