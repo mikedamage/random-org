@@ -17,7 +17,7 @@ h2. Usage
 
 h2. Dependencies
 
-
+* Ruby Standard Library _(that's it)_
 
 h2. About "Random.org":http://random.org
 
